@@ -11,7 +11,7 @@ The workflow covers **Whisper transcription → transcript cleaning → time-bin
 A root-level batch script is provided to automatically traverse participant folders and transcribe recorded session videos.  
 It generates **phrase-level** and **word-level** outputs, plus **fixed-time bins** (e.g., 10s/20s/30s) for downstream analysis.
 
-- Script: `batch_transcribe_fw.py` :contentReference[oaicite:0]{index=0}  
+- Script: `batch_transcribe_fw.py` 
 - Key features:
   - ffmpeg audio preprocessing to 16k mono wav
   - SolidWorks low-volume fallback (optional retry with VAD off)
