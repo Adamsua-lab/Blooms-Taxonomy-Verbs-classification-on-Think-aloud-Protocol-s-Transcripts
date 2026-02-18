@@ -1,0 +1,47 @@
+{
+  "created_at": "2025-10-12_01-47-29",
+  "winner_name": "SGDClassifier (P60)",
+  "winner_params": {
+    "loss": "hinge",
+    "alpha": 1e-05,
+    "class_weight": "balanced",
+    "max_iter": 4000,
+    "tol": 0.0001,
+    "random_state": 13
+  },
+  "levels": [
+    "Kn",
+    "Cm",
+    "Ap",
+    "An",
+    "Sn",
+    "Ev"
+  ],
+  "level_names": {
+    "Kn": "knowledge",
+    "Cm": "comprehension",
+    "Ap": "application",
+    "An": "analysis",
+    "Sn": "synthesis",
+    "Ev": "evaluation"
+  },
+  "use_row_weights": true,
+  "has_oof_thresholds": true,
+  "calibration": {
+    "type": "rank_cdf_per_class",
+    "note": "Apply CDFs to raw decision scores to map to [0,1] before thresholding.",
+    "cdf_count": 6
+  },
+  "thresholds": {
+    "tuning_source": "results\\BT4_structural_best\\artifacts\\SGDClassifier_P60_2025-10-12_01-47-29\\thresholds.json",
+    "oof_present": true
+  },
+  "artifact_paths": {
+    "model": "results\\BT4_structural_best\\artifacts\\SGDClassifier_P60_2025-10-12_01-47-29\\model.pkl",
+    "cdfs": "results\\BT4_structural_best\\artifacts\\SGDClassifier_P60_2025-10-12_01-47-29\\calibration_cdfs.json",
+    "thresholds": "results\\BT4_structural_best\\artifacts\\SGDClassifier_P60_2025-10-12_01-47-29\\thresholds.json",
+    "row_weights": "results\\BT4_structural_best\\artifacts\\SGDClassifier_P60_2025-10-12_01-47-29\\row_weights.npy",
+    "S_core_calibrated": "results\\BT4_structural_best\\artifacts\\SGDClassifier_P60_2025-10-12_01-47-29\\S_core_calibrated.npy",
+    "S_eval_calibrated": "results\\BT4_structural_best\\artifacts\\SGDClassifier_P60_2025-10-12_01-47-29\\S_eval_calibrated.npy"
+  }
+}
